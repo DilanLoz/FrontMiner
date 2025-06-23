@@ -3,54 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OddsMiner.co</title>
+  <title>Iniciar sesión - OddsMiner.co</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-dark font-poppins min-h-screen">
+<body class="bg-light font-poppins text-dark min-h-screen flex items-center justify-center">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-primary">OddsMiner.co</h1>
-    <nav class="space-x-6 hidden md:block">
-      <a href="#" class="nav-link">Inicio</a>
-      <a href="#" class="nav-link">Apuestas</a>
-      <a href="#" class="nav-link">Estadísticas</a>
-      <a href="#" class="nav-link">Contacto</a>
-    </nav>
-    <button class="btn-primary">Iniciar sesión</button>
-  </header>
-
-  <!-- Hero -->
-  <section class="text-center px-6 py-20 bg-[#f4f5f7]">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-dark">Descubre las Mejores Probabilidades</h2>
-    <p class="text-gray-700 max-w-2xl mx-auto mb-10">Apuesta con inteligencia, precisión y estilo en OddsMiner.co</p>
-    <a href="#" class="btn-cta">Explorar apuestas</a>
-  </section>
-
-  <!-- Cards -->
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-12">
-    <div class="card">
-      <h3 class="card-title">Fútbol</h3>
-      <p class="card-text">Sigue tus ligas favoritas y encuentra los mejores momios.</p>
+  <div class="flex w-full max-w-5xl bg-white shadow-2xl rounded-2xl overflow-hidden">
+    <!-- Imagen / Lado izquierdo -->
+    <div class="hidden md:block md:w-1/2 bg-blue-700 text-white p-10 relative">
+      <h2 class="text-3xl font-bold mb-4">Tu cuenta, segura</h2>
+      <p class="text-blue-100 mb-10">Protegemos tu información y tus apuestas.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3082/3082383.png" alt="Seguridad" class="w-64 mx-auto opacity-90" />
+      <p class="text-xs absolute bottom-4 left-10 text-blue-200">© OddsMiner.co</p>
     </div>
-    <div class="card">
-      <h3 class="card-title">E-Sports</h3>
-      <p class="card-text">Apuesta en torneos de Valorant, LoL, CS2 y más.</p>
-    </div>
-    <div class="card">
-      <h3 class="card-title">NBA & Más</h3>
-      <p class="card-text">Cobertura total de deportes con análisis en tiempo real.</p>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-white text-center py-6 text-gray-500 text-sm shadow-inner">
-    &copy; 2025 OddsMiner.co — Todos los derechos reservados.
-  </footer>
+    <!-- Login / Lado derecho -->
+    <div class="w-full md:w-1/2 p-10">
+      <h2 class="text-3xl font-bold mb-6 text-primary text-center">Iniciar sesión</h2>
+
+      <form id="loginForm" class="space-y-5">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+          <input type="email" id="email" name="email" required
+                 class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition">
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+          <div class="relative">
+            <input type="password" id="password" name="password" required
+                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition">
+            <span id="togglePassword" class="absolute right-3 top-3 cursor-pointer text-sm text-primary hover:underline">Mostrar</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-sm">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="rounded">
+            <span>Recordarme</span>
+          </label>
+          <a href="#" class="text-primary hover:underline">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Entrar</button>
+      </form>
+
+      <p class="text-sm text-center mt-6 text-gray-600">¿No tienes cuenta?
+        <a href="#" class="text-primary font-medium hover:underline">Regístrate aquí</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>
-
-
