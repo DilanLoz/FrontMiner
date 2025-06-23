@@ -47,12 +47,12 @@ body {
 
 /* Enlaces */
 .nav-link {
-  color: #374151;
+  color: #fff; /* Cambia a blanco */
   font-weight: 500;
   transition: color 0.3s;
 }
 .nav-link:hover {
-  color: #2563eb;
+  color: #2563eb; /* Azul al pasar el cursor */
 }
 
 /* Tarjetas */
