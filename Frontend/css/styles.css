@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Paleta */
+.bg-light {
+  background-color: #f8f9fa;
+}
+.text-dark {
+  color: #0f172a;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.text-primary {
+  color: #2563eb;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* CTA */
+.btn-cta {
+  background-color: #2563eb;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.btn-cta:hover {
+  background-color: #1e3a8a;
+  box-shadow: 0 5px 20px rgba(37, 99, 235, 0.5);
+}
+
+/* Enlaces */
+.nav-link {
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #2563eb;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+.card-title {
+  font-size: 1.25rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.card-text {
+  color: #4b5563;
+}
